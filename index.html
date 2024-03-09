@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <html data-theme="light"></html>
+    <script src="https://kit.fontawesome.com/b853b6dfe4.js" crossorigin="anonymous"></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -213,33 +214,27 @@
             <!-- Cards Section-->
             <div>
               <!-- Grid 1 -->
-              <div class="flex flex-col lg:flex-row">
+              <div class="flex flex-col lg:flex-row lg:mb-4">
                 <!-- Partition 1 -->
-                <div class="flex border-2 border-red-400 lg:w-2/4 lg:h-[9rem]">
+                <div class="flex lg:p-[10px] lg:mr-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[12rem] ">
                   <!-- No-1 -->
                 <div>
                   <img src="Images/5.png" alt="">
                 </div>
                 <!-- ICONS -->
-                <div class="flex-col border-2 border-red-400">
-                  <div class="justify-between rating rating-xl">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                <div class="flex-col pl-2 lg:w-[30rem]">
+                  <div class="flex lg:px-4 lg:text-[20px] lg:justify-between lg:w-[250px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i> 20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i> 200</a>
                   </div>
-                  <div>
-                    <h4 class="text-start">World Cups Flags Football</h4>
-                    <p class="text-start">Argentina is the best footbal team in the world.</p>
+                  <div class="lg:p-4">
+                    <h4 class="text-start font-bold lg:text-2xl">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-1xl">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div class="flex justify-between align-middle px-2">
-                    <p class="">Price - $22.00</p>
-                    <button class="flex justify-between w-[15rem] py- px-4  rounded-xl uppercase text-gray-600 font-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[15px] font-bold lg:text-start lg:pl-2 lg:w-[10rem] text-custom-color">Price - $22.00</p>
+                    <button class="flex justify-evenly  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
@@ -248,166 +243,154 @@
                   </div>
                 </div>
                 </div>
-                <!-- No.2 -->
+                <!-- Partition 2 -->
+                <div class="flex lg:p-[10px] lg:ml-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[9rem] ">
+                  <!-- No-2 -->
                 <div>
                   <img src="Images/6.png" alt="">
                 </div>
-                <div>
-                  <div class="rating rating-xs">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                <!-- ICONS -->
+                <div class="flex-col pl-2">
+                  <div class="flex lg:justify-between lg:w-[150px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i>20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i>200</a>
                   </div>
                   <div>
-                    <h4>World Cups Flags Football</h4>
-                    <p>Argentina is the best footbal team in the world.</p>
+                    <h4 class="text-start font-bold">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-[15px]">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div>
-                    <p>Price - $22.00</p>
-                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[10px] lg:w-[4rem] ">Price - $22.00</p>
+                    <button class="flex justify-end  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        
-                      Buy Now
+                        Delivery Fee - Free
                   </button>
                   </div>
+                </div>
                 </div>
               </div>
               <!-- Grid 2 -->
-              <div class="flex">
-                <!-- No-1 -->
+              <div class="flex flex-col lg:flex-row lg:mb-4">
+                <!-- Partition 1 -->
+                <div class="flex lg:p-[10px] lg:mr-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[9rem] ">
+                  <!-- No-1 -->
                 <div>
-                  <img src="Images/5.png" alt="">
+                  <img src="Images/7.png" alt="">
                 </div>
-                <div>
-                  <div class="rating rating-xs">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                <!-- ICONS -->
+                <div class="flex-col pl-2">
+                  <div class="flex lg:justify-between lg:w-[150px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i>20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i>200</a>
                   </div>
                   <div>
-                    <h4>World Cups Flags Football</h4>
-                    <p>Argentina is the best footbal team in the world.</p>
+                    <h4 class="text-start font-bold">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-[15px]">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div>
-                    <p>Price - $22.00</p>
-                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[10px] lg:w-[4rem] ">Price - $22.00</p>
+                    <button class="flex justify-end  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        
-                      Buy Now
+                        Delivery Fee - Free
                   </button>
                   </div>
                 </div>
-                <div>
-                  <img src="Images/5.png" alt="">
                 </div>
+                <!-- Partition 2 -->
+                <div class="flex lg:p-[10px] lg:ml-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[9rem] ">
+                  <!-- No-2 -->
                 <div>
-                  <div class="rating rating-xs">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  <img src="Images/8.png" alt="">
+                </div>
+                <!-- ICONS -->
+                <div class="flex-col pl-2">
+                  <div class="flex lg:justify-between lg:w-[150px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i>20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i>200</a>
                   </div>
                   <div>
-                    <h4>World Cups Flags Football</h4>
-                    <p>Argentina is the best footbal team in the world.</p>
+                    <h4 class="text-start font-bold">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-[15px]">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div>
-                    <p>Price - $22.00</p>
-                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[10px] lg:w-[4rem] ">Price - $22.00</p>
+                    <button class="flex justify-end  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        
-                      Buy Now
+                        Delivery Fee - Free
                   </button>
                   </div>
+                </div>
                 </div>
               </div>
               <!-- Grid 3 -->
-              <div class="flex">
-                <!-- No-1 -->
+              <div class="flex flex-col lg:flex-row lg:mb-4">
+                <!-- Partition 1 -->
+                <div class="flex lg:p-[10px] lg:mr-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[9rem] ">
+                  <!-- No-1 -->
                 <div>
-                  <img src="Images/5.png" alt="">
+                  <img src="Images/9.png" alt="">
                 </div>
-                <div>
-                  <div class="rating rating-xs">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                <!-- ICONS -->
+                <div class="flex-col pl-2">
+                  <div class="flex lg:justify-between lg:w-[150px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i>20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i>200</a>
                   </div>
                   <div>
-                    <h4>World Cups Flags Football</h4>
-                    <p>Argentina is the best footbal team in the world.</p>
+                    <h4 class="text-start font-bold">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-[15px]">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div>
-                    <p>Price - $22.00</p>
-                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[10px] lg:w-[4rem] ">Price - $22.00</p>
+                    <button class="flex justify-end  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        
-                      Buy Now
+                        Delivery Fee - Free
                   </button>
                   </div>
                 </div>
-                <div>
-                  <img src="Images/5.png" alt="">
                 </div>
+                <!-- Partition 2 -->
+                <div class="flex lg:p-[10px] lg:ml-2 rounded-2xl border-2 border-gray-300 lg:w-2/4 lg:h-[9rem] ">
+                  <!-- No-2 -->
                 <div>
-                  <div class="rating rating-xs">
-                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
-                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
-                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 576 512">
-                      <path fill="currentColor"
-                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                      </path>
-                    </svg>
-                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  <img src="Images/.png" alt="">
+                </div>
+                <!-- ICONS -->
+                <div class="flex-col pl-2">
+                  <div class="flex lg:justify-between lg:w-[150px]">
+                    <a href="" role="button"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0</a>
+                    <a href="" role="button"><i class="fa-regular fa-eye"></i>20</a>
+                    <a href="" role="button"><i class="fa-regular fa-heart"></i></i>200</a>
                   </div>
                   <div>
-                    <h4>World Cups Flags Football</h4>
-                    <p>Argentina is the best footbal team in the world.</p>
+                    <h4 class="text-start font-bold">World Cups Flags Football</h4>
+                    <p class="lg:w-[250px] text-start lg:text-[15px]">Argentina is the best footbal team in the world.</p>
                   </div>
-                  <div>
-                    <p>Price - $22.00</p>
-                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                  <div class="flex lg:justify-between lg:px-2">
+                    <p class="lg:text-[10px] lg:w-[4rem] ">Price - $22.00</p>
+                    <button class="flex justify-end  w-[15rem] py- px-4 text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        
-                      Buy Now
+                        Delivery Fee - Free
                   </button>
                   </div>
+                </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

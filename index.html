@@ -41,7 +41,7 @@
     
     <header class="lg:container lg:mx-auto">
 
-        <nav class="p-4 lg:p-8">
+        <nav class="py-4 lg:py-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -68,7 +68,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle inline">
+                    <button class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
                     <a class="btn bg-custom-color text-white font-black lg:text-[20px]">Get Ticket</a>
@@ -100,14 +100,14 @@
 
         <!-- 2nd - Radial Progress Container -->
         <div class="text-center p-8 lg:m-8">
-            <div class="py-8">
-                <h1 class="text-2xl lg:text-5xl font-extrabold lg:py-10">Professional Hockeys Club</h1>
+            <div class="pb-8">
+                <h1 class="text-2xl lg:text-5xl font-extrabold lg:pb-10">Professional Hockeys Club</h1>
                 <p class="py-4 mx-auto lg:w-2/4 text-xl lg:text-2xl">Playing field Hockey is a popularly played Sport in our Country, which is played by forming teams.</p>
             </div>
           <!-- Border Line -->
             <div class="mb-8 lg:mt-8 border-dotted border-2 border-grey-300"></div>
             <!-- Radial Progress BAR -->
-            <div class="flex flex-col lg:flex-row lg:m-8 lg:p-8 space-x-4">
+            <div class="flex flex-col lg:flex-row lg:m-8 lg:p-8 lg:space-x-12">
                 <!-- RP-1 -->
                 <div class="">
                     <div class="radial-progress text-4xl text-rp-1" style="--value:87; --size:10rem" role="progressbar">87%</div>
@@ -147,8 +147,8 @@
 
         <!-- 3rd - Program Section -->
         <div class="text-center p-8 lg:m-8">
-            <div class="py-8">
-                <h1 class="text-2xl lg:text-5xl font-extrabold lg:py-10">Program Sections</h1>
+            <div class="pb-8">
+                <h1 class="text-2xl lg:text-6xl font-extrabold lg:pb-10">Program Sections</h1>
                 <p class="py-4 mx-auto lg:w-2/4 text-xl lg:text-2xl">Playing field Hockey is a popularly played Sport in our Country, which is played by forming teams.</p>
             </div>
         <!-- Border Line -->
@@ -199,6 +199,215 @@
         </div>
         <!-- Border Line -->
         <div class="mb-8 lg:mt-8 border-dotted border-2 border-grey-300"></div>
+
+        <!-- 4th - Product Section -->
+        <div>
+          <div>
+            <div class="text-center p-8 lg:m-">
+              <div class="pb-8">
+                  <h1 class="text-2xl lg:text-6xl font-extrabold lg:pb-10">Our New Products</h1>
+                  <p class="py-4 mx-auto lg:w-2/4 text-xl lg:text-2xl">Playing field Hockey is a popularly played Sport in our Country, which is played by forming teams.</p>
+              </div>
+              <!-- Border Line -->
+            <div class="mb-8 lg:mt-8 border-dotted border-2 border-grey-300"></div>
+            <!-- Cards Section-->
+            <div>
+              <!-- Grid 1 -->
+              <div class="flex flex-col lg:flex-row">
+                <!-- No-1 -->
+                <div>
+                  <img src="Images/5.png" alt="">
+                </div>
+                <!-- ICONS -->
+                <div class="flex-col">
+                  <div class="justify-between rating rating-xl">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4 class="text-start">World Cups Flags Football</h4>
+                    <p class="text-start">Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div class="flex justify-between align-middle px-2">
+                    <p class="">Price - $22.00</p>
+                    <button class="flex justify-between w-[15rem] py- px-4  rounded-xl uppercase text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        Delivery Fee - Free
+                  </button>
+                  </div>
+                </div>
+                <!-- No.2 -->
+                <div>
+                  <img src="Images/6.png" alt="">
+                </div>
+                <div>
+                  <div class="rating rating-xs">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4>World Cups Flags Football</h4>
+                    <p>Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div>
+                    <p>Price - $22.00</p>
+                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        
+                      Buy Now
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid 2 -->
+              <div class="flex">
+                <!-- No-1 -->
+                <div>
+                  <img src="Images/5.png" alt="">
+                </div>
+                <div>
+                  <div class="rating rating-xs">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4>World Cups Flags Football</h4>
+                    <p>Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div>
+                    <p>Price - $22.00</p>
+                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        
+                      Buy Now
+                  </button>
+                  </div>
+                </div>
+                <div>
+                  <img src="Images/5.png" alt="">
+                </div>
+                <div>
+                  <div class="rating rating-xs">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4>World Cups Flags Football</h4>
+                    <p>Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div>
+                    <p>Price - $22.00</p>
+                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        
+                      Buy Now
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid 3 -->
+              <div class="flex">
+                <!-- No-1 -->
+                <div>
+                  <img src="Images/5.png" alt="">
+                </div>
+                <div>
+                  <div class="rating rating-xs">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4>World Cups Flags Football</h4>
+                    <p>Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div>
+                    <p>Price - $22.00</p>
+                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        
+                      Buy Now
+                  </button>
+                  </div>
+                </div>
+                <div>
+                  <img src="Images/5.png" alt="">
+                </div>
+                <div>
+                  <div class="rating rating-xs">
+                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                    <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512">
+                      <path fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
+                      </path>
+                    </svg>
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  </div>
+                  <div>
+                    <h4>World Cups Flags Football</h4>
+                    <p>Argentina is the best footbal team in the world.</p>
+                  </div>
+                  <div>
+                    <p>Price - $22.00</p>
+                    <button class="py-4 px-9 bg-gradient-to-r from-[#A4Bc46] to-[#85A019] rounded-xl uppercase text-white fonrt-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        
+                      Buy Now
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </header>
 

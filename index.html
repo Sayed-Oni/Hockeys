@@ -3,16 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey's</title>
     <!-- CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <html data-theme="light"></html>
     <!-- Google Font -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Custom Color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'custom-color': '#FF4240',
+                        'rp-1': '#FF4240',
+                        'rp-2': '#49D293',
+                        'rp-3': '#FFB546',
+                        'rp-4': '#4C8DF1',
+                        
+                    },
+                },
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="font-manrope">
     
+    <header class="lg:container lg:mx-auto">
+
+        <nav class="p-4 lg:p-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-custom-color font-black"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl font-black">Hockey's</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-custom-color font-black"><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                    <a class="btn bg-custom-color text-white font-black">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+
+        <!-- Slider / Carousel -->
+        <div class="carousel m- lg:w-full">
+            <!-- Slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <!-- Slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+          </div>
+          <!-- Border Line -->
+          <div class="mt-20 border-dotted border-2 border-grey-300"></div>
+
+        <!-- Radial Progress Container -->
+        <div class="text-center p-8 lg:m-8">
+            <div class="py-8">
+                <h1 class="text-2xl lg:text-5xl font-extrabold lg:py-10">Professional Hockeys Club</h1>
+                <p class="py-4 mx-auto lg:w-2/4 text-xl lg:text-2xl">Playing field Hockey is a popularly played Sport in our Country, which is played by forming teams.</p>
+            </div>
+          <!-- Border Line -->
+            <div class="mb-8 lg:mt-8 border-dotted border-2 border-grey-300"></div>
+            <!-- Radial Progress BAR -->
+            <div class="flex flex-col lg:flex-row lg:m-8 lg:p-8 space-x-4">
+                <!-- RP-1 -->
+                <div class="">
+                    <div class="radial-progress text-4xl text-rp-1" style="--value:87; --size:10rem" role="progressbar">87%</div>
+                    <div class="m-4 ">
+                        <h6 class="text-xl font-extrabold">Player Facility</h6>
+                        <p class="lg:w-64 m-4 lg:mx-auto">Playing field Hockey is a popularly played Sport.</p>
+                    </div>
+                </div>
+                <!-- RP-2 -->
+                <div>
+                    <div class="radial-progress text-4xl text-rp-2" style="--value:95; --size:10rem" role="progressbar">95%</div>
+                    <div class="m-4 ">
+                        <h6 class="text-xl font-extrabold">Experienced Coach</h6>
+                        <p class="lg:w-64 m-4 lg:mx-auto">Playing field Hockey is a popularly played Sport.</p>
+                    </div>
+                </div>
+                <!-- RP-3 -->
+                <div>
+                    <div class="radial-progress text-4xl text-rp-3" style="--value:90; --size:10rem" role="progressbar">90%</div>
+                    <div class="m-4 ">
+                        <h6 class="text-xl font-extrabold">Senior Player</h6>
+                        <p class="lg:w-64 m-4 lg:mx-auto">Playing field Hockey is a popularly played Sport.</p>
+                    </div>
+                </div>
+                <!-- RP-4 -->
+                <div>
+                    <div class="radial-progress text-4xl text-rp-4" style="--value:80; --size:10rem" role="progressbar">80%</div>
+                    <div class="m-4 ">
+                        <h6 class="text-xl font-extrabold">Training Ground</h6>
+                        <p class="lg:w-64 m-4 lg:mx-auto">Playing field Hockey is a popularly played Sport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Border Line -->
+        <div class="mb-8 lg:-mt-16 border-dotted border-2 border-grey-300"></div>
+
+
+    </header>
+
+    <main class="lg:container lg:mx-auto">
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
 </body>
 </html>
